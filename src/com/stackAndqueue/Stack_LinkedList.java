@@ -3,7 +3,7 @@ package com.stackAndqueue;
 public class Stack_LinkedList {
 	
 	public static void main (String [] args) {
-		LinkedStack stack1 = new LinkedStack();
+		LinkedListStack stack1 = new LinkedListStack();
 		stack1.pushlist(56);
 		stack1.pushlist(30);
 		stack1.pushlist(70);
@@ -30,7 +30,7 @@ public class Stack_LinkedList {
 }
 
 
-class LinkedStack {
+class LinkedListStack {
 	
 	StackNode root;
 	
