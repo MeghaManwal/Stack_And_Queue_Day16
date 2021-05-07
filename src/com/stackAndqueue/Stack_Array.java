@@ -11,6 +11,21 @@ public static void main (String [] args) {
 		stack.push(70);
 		
 		stack.print();	
+		
+                System.out.println("\nElement at the top of the Stack: "+ stack.peek());
+		
+		System.out.println("\nTo pop out the First element till the stack is empty");
+		stack.pop();
+		stack.print();
+		System.out.println("Element at the top of the Stack: "+ stack.peek());
+		
+		stack.pop();
+		stack.print();
+		System.out.println("Element at the top of the Stack: "+ stack.peek());
+		
+		stack.pop();
+		stack.print();
+		System.out.println("Element at the top of the Stack: "+ stack.peek());
 	}
 
 }
@@ -72,6 +87,17 @@ class Stack {
 		}
 		
 		System.out.println();
-	 }		
+	 }	
+	 
+	 public int pop() {
+		if(isEmpty()) {
+		  System.out.println("Stack underflow");
+		  return 0;
+		}
+                else {
+		  return stk[top--];
+		}
+			
+	 }
 			
 }

@@ -9,6 +9,23 @@ public class Stack_LinkedList {
 		stack1.pushlist(70);
 		
 		stack1.printlist();
+		
+                System.out.println("\nElement at the top of the Stack: "+ stack1.topValue());
+		
+		System.out.println("\nTo pop out the First element till the stack is empty");
+		stack1.poplist();
+		stack1.printlist();
+		System.out.println("Element at the top of the Stack: "+ stack1.topValue());
+		
+		stack1.poplist();
+		stack1.printlist();
+		System.out.println("Element at the top of the Stack: "+ stack1.topValue());
+		
+		stack1.poplist();
+		stack1.printlist();
+		System.out.println("Element at the top of the Stack: "+ stack1.topValue());
+		
+		
 	}
 }
 
@@ -52,5 +69,23 @@ class LinkedStack {
 	         System.out.print(temp.data+" -> ");
 	         temp = temp.next;
                 }
+        }
+	  
+        public boolean isempty() {
+   	        return root == null;
+        } 
+    
+        public int topValue() {
+   	        if(!isempty()) 
+   		   return root.data; 
+   	        else
+   		   return 0;
+        }
+	
+	public void poplist() {
+  	        if (root == null) {
+  		  System.out.println("head should not be null");
+  	        }
+                root=(root).next;	 	 
         }
 }
